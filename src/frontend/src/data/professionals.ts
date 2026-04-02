@@ -1,0 +1,225 @@
+export interface Professional {
+  id: number;
+  name: string;
+  category: string;
+  experience: number;
+  rating: number;
+  reviews: number;
+  location: string;
+  priceHourly: number;
+  priceDaily: number;
+  priceMonthly: number;
+  skills: string[];
+  bio: string;
+  avatar: string;
+  phone: string;
+}
+
+export const professionals: Professional[] = [
+  {
+    id: 1,
+    name: "Rajesh Kumar",
+    category: "Plumber",
+    experience: 8,
+    rating: 4.8,
+    reviews: 127,
+    location: "Mumbai",
+    priceHourly: 350,
+    priceDaily: 2500,
+    priceMonthly: 18000,
+    skills: ["Pipe Fitting", "Leak Repair", "Installation", "Drainage"],
+    bio: "Expert plumber with 8 years of experience in residential and commercial plumbing. Specialized in pipe fitting, leak detection, and complete bathroom installations.",
+    avatar: "https://i.pravatar.cc/300?img=12",
+    phone: "+91 98765 43210",
+  },
+  {
+    id: 2,
+    name: "Dr. Priya Sharma",
+    category: "Doctor",
+    experience: 12,
+    rating: 4.9,
+    reviews: 245,
+    location: "Delhi",
+    priceHourly: 1200,
+    priceDaily: 8000,
+    priceMonthly: 55000,
+    skills: ["General Medicine", "Consultation", "Health Check", "Pediatrics"],
+    bio: "MBBS, MD with 12 years of clinical practice. Specializes in general medicine and preventive healthcare. Available for home visits and online consultations.",
+    avatar: "https://i.pravatar.cc/300?img=5",
+    phone: "+91 98765 43211",
+  },
+  {
+    id: 3,
+    name: "Anita Desai",
+    category: "Teacher",
+    experience: 6,
+    rating: 4.7,
+    reviews: 89,
+    location: "Bangalore",
+    priceHourly: 400,
+    priceDaily: 2800,
+    priceMonthly: 20000,
+    skills: ["Mathematics", "Science", "English", "IIT-JEE Prep"],
+    bio: "Passionate educator with 6 years of teaching experience. Specializes in CBSE/ICSE curriculum for grades 6-12. Proven track record with 95% student success rate.",
+    avatar: "https://i.pravatar.cc/300?img=9",
+    phone: "+91 98765 43212",
+  },
+  {
+    id: 4,
+    name: "Suresh Verma",
+    category: "Electrician",
+    experience: 10,
+    rating: 4.6,
+    reviews: 156,
+    location: "Chennai",
+    priceHourly: 300,
+    priceDaily: 2000,
+    priceMonthly: 15000,
+    skills: ["Wiring", "Panel Repair", "Appliance Install", "MCB Fixing"],
+    bio: "Certified electrician with 10 years of expertise in residential and commercial electrical work. Licensed and insured for all types of electrical repairs and installations.",
+    avatar: "https://i.pravatar.cc/300?img=15",
+    phone: "+91 98765 43213",
+  },
+  {
+    id: 5,
+    name: "Mahesh Thakur",
+    category: "Carpenter",
+    experience: 15,
+    rating: 4.8,
+    reviews: 203,
+    location: "Pune",
+    priceHourly: 280,
+    priceDaily: 1800,
+    priceMonthly: 14000,
+    skills: ["Furniture Making", "Woodwork", "Door/Window", "Polishing"],
+    bio: "Master carpenter with 15 years of craftsmanship. Expert in custom furniture, modular kitchens, and wooden flooring. Known for precision and attention to detail.",
+    avatar: "https://i.pravatar.cc/300?img=33",
+    phone: "+91 98765 43214",
+  },
+  {
+    id: 6,
+    name: "Ramesh Singh",
+    category: "Driver",
+    experience: 5,
+    rating: 4.5,
+    reviews: 67,
+    location: "Hyderabad",
+    priceHourly: 200,
+    priceDaily: 1500,
+    priceMonthly: 12000,
+    skills: ["City Driving", "Outstation", "Night Driving", "Airport Pickup"],
+    bio: "Experienced driver with 5 years and 200,000+ km driven. Clean license, punctual, and courteous. Available for personal, corporate, and outstation trips.",
+    avatar: "https://i.pravatar.cc/300?img=51",
+    phone: "+91 98765 43215",
+  },
+  {
+    id: 7,
+    name: "Chef Meena Patel",
+    category: "Chef",
+    experience: 9,
+    rating: 4.9,
+    reviews: 178,
+    location: "Ahmedabad",
+    priceHourly: 600,
+    priceDaily: 4000,
+    priceMonthly: 30000,
+    skills: ["Indian Cuisine", "Continental", "Baking", "Catering"],
+    bio: "Professional chef trained at IHM with 9 years of experience. Specializes in Indian, continental, and fusion cuisines. Perfect for home events, parties, and daily cooking.",
+    avatar: "https://i.pravatar.cc/300?img=47",
+    phone: "+91 98765 43216",
+  },
+  {
+    id: 8,
+    name: "Vikram Pawar",
+    category: "Painter",
+    experience: 7,
+    rating: 4.6,
+    reviews: 112,
+    location: "Kolkata",
+    priceHourly: 250,
+    priceDaily: 1600,
+    priceMonthly: 13000,
+    skills: ["Interior Painting", "Exterior", "Texture Work", "Waterproofing"],
+    bio: "Skilled painter with 7 years of experience in residential and commercial painting. Expert in modern textures, wall designs, and waterproofing treatments.",
+    avatar: "https://i.pravatar.cc/300?img=60",
+    phone: "+91 98765 43217",
+  },
+];
+
+export const categories = [
+  {
+    name: "Plumber",
+    icon: "Wrench",
+    description: "Pipe fitting, leak repairs & more",
+    color: "#2F6FDB",
+  },
+  {
+    name: "Doctor",
+    icon: "Stethoscope",
+    description: "Home visits & consultations",
+    color: "#2F6FDB",
+  },
+  {
+    name: "Teacher",
+    icon: "BookOpen",
+    description: "Home tuition & coaching",
+    color: "#2F6FDB",
+  },
+  {
+    name: "Electrician",
+    icon: "Zap",
+    description: "Wiring, repairs & installation",
+    color: "#2F6FDB",
+  },
+  {
+    name: "Carpenter",
+    icon: "Hammer",
+    description: "Furniture & woodwork experts",
+    color: "#2F6FDB",
+  },
+  {
+    name: "Driver",
+    icon: "Car",
+    description: "Personal & corporate drivers",
+    color: "#2F6FDB",
+  },
+  {
+    name: "Chef",
+    icon: "ChefHat",
+    description: "Home cooking & catering",
+    color: "#2F6FDB",
+  },
+  {
+    name: "Painter",
+    icon: "Paintbrush2",
+    description: "Interior & exterior painting",
+    color: "#2F6FDB",
+  },
+];
+
+export const reviews = [
+  {
+    id: 1,
+    name: "Priya Mehta",
+    location: "Mumbai",
+    rating: 5,
+    text: "Found an amazing plumber through KAAMMITRA. Rajesh fixed our pipe burst within 2 hours of booking. Professional, clean, and affordable. Highly recommend!",
+    avatar: "https://i.pravatar.cc/80?img=20",
+  },
+  {
+    id: 2,
+    name: "Arjun Nair",
+    location: "Bangalore",
+    rating: 5,
+    text: "Hired Anita as a math tutor for my son. His grades went from C to A in just 3 months. She's patient, methodical, and truly cares about her students.",
+    avatar: "https://i.pravatar.cc/80?img=42",
+  },
+  {
+    id: 3,
+    name: "Sunita Rao",
+    location: "Delhi",
+    rating: 5,
+    text: "Chef Meena cooked for my daughter's birthday party. 50 guests and everyone was amazed. The food was absolutely delicious. Will definitely book again!",
+    avatar: "https://i.pravatar.cc/80?img=32",
+  },
+];
